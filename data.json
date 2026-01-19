@@ -96,7 +96,7 @@
         "Conductos"
       ],
       "bio": "Experto en climatización. Mantenimiento preventivo y reparación de todas las marcas del mercado.",
-      "image": "https://images.unsplash.com/photo-1621905252507-b35242f8df49?w=400&h=400&fit=crop",
+      "image": "https://images.unsplash.com/photo-1761839257870-06874bda71b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D",
       "slots": [
         "08:30",
         "13:00",
@@ -120,7 +120,7 @@
         "Decorativa"
       ],
       "bio": "Pintura de alta calidad. Cuidamos cada detalle y protegemos tu mobiliario como si fuera nuestro.",
-      "image": "https://images.unsplash.com/photo-1589939705384-5185138a04b9?w=400&h=400&fit=crop",
+      "image": "https://images.unsplash.com/photo-1768326205103-0ad658551cea?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzd8fHxlbnwwfHx8fHw%3D",
       "slots": [
         "09:00",
         "10:00",
@@ -144,7 +144,7 @@
         "Estructuras"
       ],
       "bio": "Carpintero artesano. Especialista en optimización de espacios y reparaciones estructurales en madera.",
-      "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&h=400&fit=crop",
+      "image": "https://plus.unsplash.com/premium_photo-1664300494539-313eac2a6095?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FycGludGVyb3xlbnwwfHwwfHx8MA%3D%3D",
       "slots": [
         "16:00",
         "17:00",
@@ -167,7 +167,7 @@
         "Control"
       ],
       "bio": "Especialista en seguridad integral. Instalación de sistemas inteligentes y seguridad perimetral.",
-      "image": "https://images.unsplash.com/photo-1557862953-2415664da047?w=400&h=400&fit=crop",
+      "image": "https://plus.unsplash.com/premium_photo-1677410172341-c808b4a5766b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGVzcGVjaWFsaXN0YXxlbnwwfHwwfHx8MA%3D%3D",
       "slots": [
         "10:00",
         "12:00",
@@ -176,4 +176,5 @@
       ]
     }
   ]
+
 }
