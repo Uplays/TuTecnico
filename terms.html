@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones | TuTecnico</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content {
+            padding-top: 150px;
+            min-height: 80vh;
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            padding: 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            backdrop-filter: blur(20px);
+        }
+
+        .content-card h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content-card p {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i data-lucide="wrench" style="color: white; width: 22px;"></i>
+            </div>
+            TuTecnico
+        </a>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html" style="color: var(--text-dim); text-decoration: none; font-weight: 500;">Volver al
+                Inicio</a>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="content-card animate-in">
+            <h1>Términos y Condiciones</h1>
+            <p>Al acceder y utilizar TuTecnico.com, aceptas cumplir con los siguientes términos y condiciones de
+                servicio.</p>
+            <p><strong>1. Naturaleza del Servicio:</strong> TuTecnico.com actúa como una plataforma de conexión entre
+                usuarios y profesionales independientes. No empleamos directamente a los técnicos y no somos
+                responsables de la ejecución final de los trabajos, aunque velamos por la calidad de la red.</p>
+            <p><strong>2. Reservas y Pagos:</strong> Las reservas realizadas a través de la plataforma son solicitudes
+                de servicio. Los pagos se acuerdan y realizan directamente al profesional tras la finalización
+                satisfactoria del trabajo.</p>
+            <p><strong>3. Responsabilidad:</strong> Cada técnico profesional es responsable de su seguro de
+                responsabilidad civil y de la garantía de sus trabajos realizados.</p>
+            <p>El uso continuado de nuestra plataforma implica la aceptación de cualquier actualización en estos
+                términos.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo" style="justify-content: center; margin-bottom: 30px;">
+            <div class="logo-icon"><i data-lucide="wrench" style="color: white; width: 18px;"></i></div>
+            TuTecnico
+        </div>
+        <div class="footer-links">
+            <a href="privacy.html">Privacidad</a>
+            <a href="terms.html">Términos</a>
+            <a href="help.html">Ayuda</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <p style="color: rgba(255,255,255,0.2); font-size: 0.8rem;">© 2026 TuTecnico.com - Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Ayuda | TuTecnico</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content {
+            padding-top: 150px;
+            min-height: 80vh;
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            padding: 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            backdrop-filter: blur(20px);
+        }
+
+        .content-card h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .faq-item h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .faq-item p {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i data-lucide="wrench" style="color: white; width: 22px;"></i>
+            </div>
+            TuTecnico
+        </a>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html" style="color: var(--text-dim); text-decoration: none; font-weight: 500;">Volver al
+                Inicio</a>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="content-card animate-in">
+            <h1>Centro de Ayuda</h1>
+
+            <div class="faq-item">
+                <h3>¿Cómo reservo un servicio?</h3>
+                <p>Es muy sencillo. Explora las categorías, elige al técnico que mejor se adapte a tus necesidades por
+                    precio o rating, y utiliza nuestro chat interactivo para seleccionar fecha y hora.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cuándo se realiza el pago?</h3>
+                <p>No tienes que pagar nada por adelantado. El pago se realiza directamente al profesional una vez que
+                    el trabajo haya sido completado y estés satisfecho con el resultado.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Puedo cancelar una cita profesional?</h3>
+                <p>Sí, puedes cancelar sin ningún compromiso hasta 2 horas antes de la hora acordada contactando a
+                    través del seguimiento que recibirás por SMS.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Son técnicos verificados?</h3>
+                <p>Todos los profesionales etiquetados como "Verificados" han pasado un proceso de revisión de
+                    credenciales y seguros para garantizar tu máxima seguridad.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo" style="justify-content: center; margin-bottom: 30px;">
+            <div class="logo-icon"><i data-lucide="wrench" style="color: white; width: 18px;"></i></div>
+            TuTecnico
+        </div>
+        <div class="footer-links">
+            <a href="privacy.html">Privacidad</a>
+            <a href="terms.html">Términos</a>
+            <a href="help.html">Ayuda</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <p style="color: rgba(255,255,255,0.2); font-size: 0.8rem;">© 2026 TuTecnico.com - Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

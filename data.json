@@ -1,0 +1,179 @@
+{
+  "categories": [
+    {
+      "id": "plumbing",
+      "name": "Fontanería",
+      "icon": "lucide-droplets"
+    },
+    {
+      "id": "electricity",
+      "name": "Electricidad",
+      "icon": "lucide-zap"
+    },
+    {
+      "id": "ac",
+      "name": "Climatización",
+      "icon": "lucide-wind"
+    },
+    {
+      "id": "painting",
+      "name": "Pintura",
+      "icon": "lucide-palette"
+    },
+    {
+      "id": "carpentry",
+      "name": "Carpintería",
+      "icon": "lucide-hammer"
+    },
+    {
+      "id": "security",
+      "name": "Seguridad",
+      "icon": "lucide-shield-check"
+    }
+  ],
+  "technicians": [
+    {
+      "id": 1,
+      "name": "Carlos Rodríguez",
+      "category": "plumbing",
+      "rating": 4.9,
+      "reviews": 128,
+      "price": 35,
+      "experience": "12 años",
+      "verified": true,
+      "skills": [
+        "Termos",
+        "Fugas",
+        "Grifería",
+        "Urgencias"
+      ],
+      "bio": "Maestro fontanero con más de una década de experiencia en instalaciones residenciales y comerciales.",
+      "image": "https://images.unsplash.com/photo-1542013936693-884638332954?w=400&h=400&fit=crop",
+      "slots": [
+        "09:00",
+        "11:00",
+        "16:00",
+        "18:00"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Elena Martínez",
+      "category": "electricity",
+      "rating": 4.8,
+      "reviews": 95,
+      "price": 42,
+      "experience": "8 años",
+      "verified": true,
+      "skills": [
+        "Boletines",
+        "Cuadros",
+        "LED",
+        "Domótica"
+      ],
+      "bio": "Especialista en instalaciones modernas y eficiencia energética. Certificada para boletines oficiales.",
+      "image": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=400&fit=crop",
+      "slots": [
+        "10:30",
+        "12:00",
+        "15:00",
+        "17:30"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Marcos Silva",
+      "category": "ac",
+      "rating": 4.7,
+      "reviews": 210,
+      "price": 30,
+      "experience": "10 años",
+      "verified": false,
+      "skills": [
+        "Carga Gas",
+        "Limpieza",
+        "Split",
+        "Conductos"
+      ],
+      "bio": "Experto en climatización. Mantenimiento preventivo y reparación de todas las marcas del mercado.",
+      "image": "https://images.unsplash.com/photo-1621905252507-b35242f8df49?w=400&h=400&fit=crop",
+      "slots": [
+        "08:30",
+        "13:00",
+        "14:30",
+        "19:00"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ana Belén",
+      "category": "painting",
+      "rating": 5.0,
+      "reviews": 64,
+      "price": 28,
+      "experience": "6 años",
+      "verified": true,
+      "skills": [
+        "Alisado",
+        "Papel",
+        "Exterior",
+        "Decorativa"
+      ],
+      "bio": "Pintura de alta calidad. Cuidamos cada detalle y protegemos tu mobiliario como si fuera nuestro.",
+      "image": "https://images.unsplash.com/photo-1589939705384-5185138a04b9?w=400&h=400&fit=crop",
+      "slots": [
+        "09:00",
+        "10:00",
+        "11:00",
+        "12:00"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Roberto Sánchez",
+      "category": "carpentry",
+      "rating": 4.6,
+      "reviews": 88,
+      "price": 45,
+      "experience": "15 años",
+      "verified": true,
+      "skills": [
+        "Puertas",
+        "Armarios",
+        "Suelos",
+        "Estructuras"
+      ],
+      "bio": "Carpintero artesano. Especialista en optimización de espacios y reparaciones estructurales en madera.",
+      "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&h=400&fit=crop",
+      "slots": [
+        "16:00",
+        "17:00",
+        "18:00"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Lucía Pardo",
+      "category": "security",
+      "rating": 4.9,
+      "reviews": 42,
+      "price": 50,
+      "experience": "9 años",
+      "verified": true,
+      "skills": [
+        "Cámaras",
+        "Alarmas",
+        "Cerraduras",
+        "Control"
+      ],
+      "bio": "Especialista en seguridad integral. Instalación de sistemas inteligentes y seguridad perimetral.",
+      "image": "https://images.unsplash.com/photo-1557862953-2415664da047?w=400&h=400&fit=crop",
+      "slots": [
+        "10:00",
+        "12:00",
+        "14:00",
+        "16:00"
+      ]
+    }
+  ]
+}

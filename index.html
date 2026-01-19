@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuTecnico | Soluciones Profesionales para tu Hogar</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Professional Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <i data-lucide="wrench" style="color: white; width: 22px;"></i>
+            </div>
+            TuTecnico
+        </a>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="javascript:void(0)" onclick="scrollToServices()"
+                style="color: var(--text-dim); text-decoration: none; font-weight: 500;">Servicios</a>
+            <a href="contact.html"
+                style="background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 12px; text-decoration: none; color: white;">Soy
+                Técnico</a>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero -->
+    <header class="hero">
+        <div class="hero-badge">
+            <i data-lucide="sparkles" style="width: 14px; color: var(--warning);"></i>
+            Lanzamiento oficial en España
+        </div>
+        <h1>Tus problemas son nuestro trabajo</h1>
+        <p>Conectamos a los mejores expertos en fontanería, electricidad y mantenimiento directamente contigo. Rápido,
+            seguro y garantizado.</p>
+
+        <div class="search-container">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" class="search-input" id="search-input"
+                placeholder="¿Qué servicio necesitas hoy? (ej. Fontanero, Boletín...)">
+        </div>
+
+        <div style="display: flex; gap: 15px;">
+            <button class="book-btn" style="padding: 16px 32px; font-size: 1rem;" onclick="scrollToServices()">Explorar
+                servicios</button>
+            <div style="display: flex; align-items: center; gap: 10px; color: var(--text-dim); font-size: 0.9rem;">
+                <div style="display: flex;">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop"
+                        style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--bg-dark);">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop"
+                        style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--bg-dark); margin-left: -10px;">
+                </div>
+                +4k clientes satisfechos
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" id="services-section">
+        <div class="section-header">
+            <h2>Nuestros Expertos</h2>
+            <p style="color: var(--text-dim);">Filtra por categoría para encontrar al profesional ideal.</p>
+        </div>
+
+        <div class="categories-tabs" id="category-tabs">
+            <!-- Dynamically populated -->
+        </div>
+
+        <div class="tech-grid" id="tech-grid">
+            <!-- Dynamically populated -->
+        </div>
+    </main>
+
+    <!-- Premium Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-container">
+            <button onclick="closeModal()"
+                style="position: absolute; top: 25px; right: 25px; background: rgba(255,255,255,0.05); border: none; color: white; cursor: pointer; border-radius: 50%; width: 40px; height: 40px; z-index: 10;">
+                <i data-lucide="x"></i>
+            </button>
+
+            <aside class="modal-sidebar" id="modal-sidebar">
+                <img id="sidebar-img" src="" alt=""
+                    style="width: 100%; height: 180px; object-fit: cover; border-radius: 20px; margin-bottom: 20px;">
+                <h3 id="sidebar-name" style="margin-bottom: 5px;">Nombre</h3>
+                <p id="sidebar-category"
+                    style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">
+                    Categoria</p>
+                <div id="sidebar-stats" style="display: flex; gap: 15px; margin-bottom: 20px;">
+                    <div>
+                        <div style="color: var(--warning); font-weight: 700;">★ <span id="sidebar-rating">4.9</span>
+                        </div>
+                        <div style="font-size: 0.7rem; color: var(--text-dim);">Rating</div>
+                    </div>
+                    <div>
+                        <div style="font-weight: 700;"><span id="sidebar-exp">10</span></div>
+                        <div style="font-size: 0.7rem; color: var(--text-dim);">Años Exp.</div>
+                    </div>
+                </div>
+                <div
+                    style="background: rgba(255,255,255,0.03); padding: 15px; border-radius: 12px; border: 1px solid var(--glass-border);">
+                    <div style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 5px;">Precio/hora</div>
+                    <div style="font-size: 1.4rem; font-weight: 800; color: var(--primary);"><span
+                            id="sidebar-price">0</span>€</div>
+                </div>
+            </aside>
+
+            <section class="modal-main">
+                <div class="chat-window" id="chat-window">
+                    <!-- Messages -->
+                </div>
+
+                <div class="chat-input-area">
+                    <div class="button-options" id="chat-options">
+                        <!-- Options -->
+                    </div>
+
+                    <div id="appointment-area" style="display: none; padding-top: 10px;">
+                        <h4 style="margin-bottom: 15px;">Selecciona una fecha:</h4>
+                        <div id="date-picker"
+                            style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-bottom: 20px;">
+                            <!-- Days -->
+                        </div>
+                        <h4 style="margin-bottom: 15px;">Horas disponibles:</h4>
+                        <div id="time-picker" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            <!-- Slots -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo" style="justify-content: center; margin-bottom: 30px;">
+            <div class="logo-icon"><i data-lucide="wrench" style="color: white; width: 18px;"></i></div>
+            TuTecnico
+        </div>
+        <div class="footer-links">
+            <a href="privacy.html">Privacidad</a>
+            <a href="terms.html">Términos</a>
+            <a href="help.html">Ayuda</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <p style="color: rgba(255,255,255,0.2); font-size: 0.8rem;">© 2026 TuTecnico.com - Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

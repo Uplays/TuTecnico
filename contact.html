@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | TuTecnico</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-content {
+            padding-top: 150px;
+            min-height: 80vh;
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            padding: 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            backdrop-filter: blur(20px);
+            text-align: center;
+        }
+
+        .content-card h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #fff, var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-method {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: 0.3s;
+        }
+
+        .contact-method:hover {
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        .contact-method i {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .contact-method h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .contact-method p {
+            color: var(--text-dim);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i data-lucide="wrench" style="color: white; width: 22px;"></i>
+            </div>
+            TuTecnico
+        </a>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <a href="index.html" style="color: var(--text-dim); text-decoration: none; font-weight: 500;">Volver al
+                Inicio</a>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="content-card animate-in">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte. Contacta con nosotros a través de cualquiera de nuestros canales oficiales.
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-method">
+                    <i data-lucide="mail" style="width: 40px; height: 40px;"></i>
+                    <h4>Email</h4>
+                    <p>soporte@tutecnico.com</p>
+                </div>
+                <div class="contact-method">
+                    <i data-lucide="phone" style="width: 40px; height: 40px;"></i>
+                    <h4>Teléfono</h4>
+                    <p>+34 900 123 456</p>
+                </div>
+                <div class="contact-method">
+                    <i data-lucide="map-pin" style="width: 40px; height: 40px;"></i>
+                    <h4>Oficinas</h4>
+                    <p>Paseo de la Castellana, Madrid</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px;">
+                <p>¿Prefieres un chat en vivo?</p>
+                <button class="book-btn" onclick="window.location.href='index.html#services-section'"
+                    style="padding: 16px 40px;">Hablar con Soporte</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo" style="justify-content: center; margin-bottom: 30px;">
+            <div class="logo-icon"><i data-lucide="wrench" style="color: white; width: 18px;"></i></div>
+            TuTecnico
+        </div>
+        <div class="footer-links">
+            <a href="privacy.html">Privacidad</a>
+            <a href="terms.html">Términos</a>
+            <a href="help.html">Ayuda</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <p style="color: rgba(255,255,255,0.2); font-size: 0.8rem;">© 2026 TuTecnico.com - Todos los derechos reservados
+        </p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
