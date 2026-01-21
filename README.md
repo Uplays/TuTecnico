@@ -41,4 +41,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 
 ## Contacto
 
-Creado por SancjoPanza ([https://github.com/uplays](https://www.google.com/search?q=https://github.com/uplays)). Si tienes alguna duda o sugerencia, puedes contactar a través del repositorio.
+Creado por Sancho Panza ([https://github.com/uplays](https://www.google.com/search?q=https://github.com/uplays)). Si tienes alguna duda o sugerencia, puedes contactar a través del repositorio.
